@@ -1,2 +1,3 @@
 # leetcode 
-nn
+
+n
