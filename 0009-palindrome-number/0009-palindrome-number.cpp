@@ -1,11 +1,17 @@
 class Solution {
-public:
-    bool isPalindrome(int x) {
-        string s = to_string(x);
-        int N = s.size();
-        for(int i = 0; i < N; i++){
-            if(s[i] != s[N-1-i]) return false;
-        }
-        return true;
+ public:
+  bool isPalindrome(int x) {
+    if (x < 0)
+      return false;
+
+    long reversed = 0;
+    int y = x;
+
+    while (y) {
+      reversed = reversed * 10 + y % 10;
+      y /= 10;
     }
+
+    return reversed == x;
+  }
 };
