@@ -1,4 +1,4 @@
-#pragma GCC optimize("O3")
+
 class Solution {
 public:
     int maxFrequency(vector<int>& nums, int k) {
